@@ -20,7 +20,7 @@
 /* --- BODY & BACKGROUND --- */
 body {
     background-color: var(--paper-bg);
-    background: url('/images/sc2000.jpg') no-repeat center center fixed;
+    background: url('images/sc2000.jpg') no-repeat center center fixed;
     background-size: cover;
     color: var(--ink-color);
     font-family: var(--body-font);
