@@ -157,17 +157,22 @@ h2 span {
 
 /* --- SCOOPS (Front Page) --- */
 .scoop-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Symmetric grid */
-    gap: 15px;
+    column-count: 2;
+    column-gap: 15px;
     border-bottom: 2px solid var(--border-black);
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
 
+.scoop-item {
+    break-inside: avoid;
+    margin-bottom: 15px;
+}
+
+
 /* The Lead Story */
 .scoop-item:first-child {
-    grid-column: 1 / -1;
+   /* column-span: all; */
     column-count: 2; /* Split lead story into 2 columns */
     column-gap: 20px;
     column-rule: none;
@@ -178,25 +183,24 @@ h2 span {
 
 .scoop-item:first-child h3 {
     column-span: all;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     text-align: center;
     margin-bottom: 15px;
 }
 
-/* Drop Cap adjustment for RTL */
 .scoop-item:first-child p:first-of-type::first-letter {
-    float: right; 
-    font-size: 4rem;
+    float: right;
+    font-size: 3.5rem;
     line-height: 0.8;
-    padding-left: 10px; 
-    padding-right: 2px; 
-    font-family: var(--item-font);
-    font-weight: 700;
+    padding-right: 8px;
+    padding-left: 2px;
+    font-family: var(--headline-font);
+    font-weight: 900;
 }
 
 /* Other scoops */
 .scoop-item h3 {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     margin-bottom: 5px;
 }
 
@@ -205,7 +209,7 @@ h2 span {
     margin-top: 5px;
     font-style: italic;
     font-size: 0.85rem;
-    text-align: left; 
+    text-align: right;
 }
 
 .reporter {
