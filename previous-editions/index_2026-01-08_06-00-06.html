@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רטרו גיימר ישראל</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Handjet:wght@100..900&family=Karantina:wght@300;400;700&family=Miriam+Libre:wght@400;700&family=Suez+One&family=Heebo:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-heb.css">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="שבועון הרטרו">
+    <meta property="og:description" content="שבועון רטרו בעברית מבית רטרו גיימר ישראל">
+    <meta property="og:image" content="https://imraf.github.io/retro/thumbnail/thumb.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="שבועון הרטרו">
+    <meta property="twitter:description" content="שבועון רטרו בעברית מבית רטרו גיימר ישראל">
+    <meta property="twitter:image" content="https://imraf.github.io/retro/thumbnail/thumb.jpg">
+    <style>
+        /* Additional inline styles for the new layout requirements */
+        .flair-box {
+            background-color: #e7e7e7;
+            border: 2px solid #333;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-family: 'Miriam Libre', monospace;
+            break-inside: avoid;
+        }
+        .flair-box h4 {
+            margin-top: 0;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 5px;
+        }
+        .flair-box p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="masthead">רטרו גיימר ישראל</h1>
+            <div class="tagline">דרישות מערכת: תואם יב״מ ושריטה מוחית קלה</div>
+            <div class="subhead">
+                <span>כרך א', גיליון 2</span>
+                <span>1 בינואר, 2026 • בכל יום חמישי</span>
+                <span>מחיר: 640KB</span>
+            </div>
+        </header>
+
+        <section class="scoops-section">
+            <h2 class="scoops-header"><span>כותרות השבוע</span></h2>
+            <div class="scoop-grid">
+                <article class="scoop-item">
+                    <h3>פריצת דרך! האם פוענח הצופן הסודי ב-״יום פתוח״ לאחר שלוש שנים וחצי?</h3>
+                    <p>המשחק ״יום פתוח״ מאת יוצר התוכן ״אולדסקול״ (רפאל בן-ארי) ממשיך לספק הפתעות עם צופן סודי שנותר חבוי למעלה משלוש וחצי שנים, מאז שוחרר. למרות מאמצי השחקנים לאתר ולפצח את הסוד העיקש, התעלומה נותרה ללא כל התקדמות עד ליום שני האחרון, עת נרשמה התרגשות רבה בקהילת השחקנים האדוקה של המשחק. השחקנים, שהפכו עם השנים לבלשים חדי עין, חקרו כל פיקסל במשחק ללא הועיל, אלא שכעת אלו טוענים כי מצאו קובץ אותו הצליחו להמיר לקוד בינארי. בניסיון לתרגם את הקוד לשפה קריאה החוקרים קיבלו תוצאה חסרת משמעות, וחשבו כי נתקלו במבוי סתום נוסף; אך באמצעות היסט בהמרת האותיות החוקרים טוענים כי יתכן והתקבל מסר מילולי שפותר את התעלומה. זמן קצר לאחר מכן גם דף הפייסבוק של ״יום פתוח״ פרסם רמיזה בנושא. סביר להניח כי פרטים נוספים בפרשה ייחשפו בקרוב.</p>
+                    <a href="https://www.facebook.com/OpenDayGame/posts/pfbid02As5XEUwCxQRK6siPfNJ5M1dtoKq7EhHAorFL82pycGR6KyUnkLtALf7HWLiqi4iRl" class="source-link">המשך בעמוד 2 &raquo;</a>
+                    <span class="reporter">— דור קומו</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>סים-סיטי ל-NES שלא שוחרר צף על פני השטח</h3>
+                    <p>
+                    <img src="data:image/png;base64,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"
+                    style="width:60%; height:auto; float: right; image-rendering:pixelated; mix-blend-mode:darken; margin-left: 10px;">
+                    חג המולד הגיע מוקדם למעריצי NES! גרסה שלא שוחררה של סים-סיטי לנינטנדו אנטרטיינמנט סיסטם שוחררה. בעוד כולנו מכירים את הקלאסיקה ל-SNES, פורט ה-NES האבוד הזה נותן לנו הצצה למה שיכול היה להיות תכנון ערים ב-8 ביט.</p>
+                    <a href="https://www.oldschoolgamermagazine.com/merry-xmas-nes-fans-heres-an-unreleased-version-of-simcity/" class="source-link">המשך בעמוד 5 &raquo;</a>
+                    <span class="reporter">— עמי גסידי</span>
+                </article>
+
+                 <article class="scoop-item">
+                    <h3>Hidden Palace משחררים אבות-טיפוס של סוניק</h3>
+                    <p>בהטלת חג ענקית, Hidden Palace ו-Last Minute Continue שחררו מאגר של אבות-טיפוס של סוניק הקיפוד. זהו אוצר לשימוריסטים ולמעריצים המחפשים לחפור בהיסטוריית הפיתוח של הקיפוד הכחול.</p>
+                    <a href="https://www.oldschoolgamermagazine.com/hidden-palace-releases-a-bevy-of-sonic-prototypes-on-christmas-day/" class="source-link">המשך בעמוד 7 &raquo;</a>
+                    <span class="reporter">— עמי גסידי</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>מתח גואה לקראת טקס הפרסים של ״יאללה בלאגן״</h3>
+                    <p>טקס הפרסים השנתי של ״יאללה בלאגן״ מגיע לישורת האחרונה. המנחים מצחצחים את הפרסים והגולשים מצביעים כאחוזי טירוף בקטגוריות השונות. זוהי הזדמנות אחרונה להצביע ולהשפיע.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe47f4Y5_fYlO5mT0VXvzyYrnOwFQLnmFC-Edo3laUuN7sHMQ/viewform" class="source-link">המשך בעמוד 9 &raquo;</a>
+                    <span class="reporter">— עמי גסידי</span>
+                </article>            
+
+                 <article class="scoop-item">
+                    <h3>להיט האימה 'P.T.' מגיע לקומודור 64</h3>
+                    <p>ב-Demake מפתיע, הטיזר המבוטל של Silent Hills, הלא הוא 'P.T.', דומיין מחדש עבור הקומודור 64 על ידי המפתח Haplo. חוו את מסדרון האימה ב-8 ביט.</p>
+                    <a href="https://www.oldschoolgamermagazine.com/p-t-haplos-horror-game-released-for-the-commodore-64/" class="source-link">המשך בעמוד 8 &raquo;</a>
+                    <span class="reporter">— עמי גסידי</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>המשחק הבלעדי לדרימקסט ביפן 'Macross M3' תורגם סוף סוף</h3>
+                    <img src="data:image/png;base64,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"
+                    style="width:100%; height:auto; display:block; image-rendering:pixelated; mix-blend-mode:darken;">
+                    <p>זהו יום נהדר למעריצי דרימקסט! יורק המכות היפני הבלעדי <em>Macross M3</em> קיבל טלאי תרגום מלא לאנגלית. קלאסיקות קאלט כאלה נעולות לעתים קרובות מאחורי מחסומי שפה, כך שמאמץ קהילתי זה פותח סוף סוף את הקוקפיט לטייסים דוברי אנגלית בכל מקום.</p>
+                    <a href="https://www.timeextension.com/news/2025/12/japan-dreamcast-exclusive-macross-m3-gets-an-english-translation" class="source-link">המשך בעמוד 4 &raquo;</a>
+                    <span class="reporter">— דור קומו</span>
+                </article>    
+
+                <article class="scoop-item">
+                    <h3>Roguecraft DX הוכרז לאמיגה, Mega65 וגיימבוי קולור</h3>
+                    <p>משחק הרוג-לייק המודרני "Roguecraft" חוזר לעתיד עם גרסת "DX" חדשה. אמור לצאת בתחילת השנה, הפורט הזה מביא את זוחל המבוכים הפרוצדורלי הפופולרי לחומרה קלאסית כולל האמיגה, ה-Mega65 בקוד פתוח, ואפילו לגיימבוי קולור ב-8 ביט.</p>
+                    <a href="https://www.timeextension.com/news/2026/01/roguecraft-dx-is-coming-to-the-amiga-mega65-and-game-boy-color" class="source-link">המשך בעמוד 2 &raquo;</a>
+                    <span class="reporter">— דור קומו</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>שעוני Xbox 360 "פגי תוקף" באופן רשמי</h3>
+                    <p>בטוויסט ביזארי בסגנון באג 2000, משתמשים גילו שלוח השנה של מערכת ה-Xbox 360 לא ניתן להגדרה מעבר ל-31 בדצמבר, 2025. בעוד הקונסולה עדיין מתפקדת, הגבלה מקודדת זו מסמנת "סוף עידן" מוחשי למערכת בת ה-20 שנה כשהיא עוברת רשמית לסטטוס וינטג'.</p>
+                    <a href="https://www.purexbox.com/news/2025/12/xbox-360-user-shows-whatll-happen-when-it-reaches-date-limit-on-december-31st-2025" class="source-link">המשך בעמוד 3 &raquo;</a>
+                    <span class="reporter">— דור קומו</span>
+                </article>
+
+                <article class="scoop-item">
+                    <h3>כיצד סגה כבשה את ברזיל: מנכ"ל Tectoy מדבר</h3>
+                    <p>סטפנו ארנהולד, מנכ"ל Tectoy לשעבר, חשף כיצד חברת צעצועים קטנה עזרה לסגה לשלוט לחלוטין בשוק הברזילאי, כשהיא הודפת "חיקויי נינטנדו" בגיבוי תאגידים גדולים. ראיון זה מציע תובנה נדירה מדוע למאסטר סיסטם הייתה אריכות ימים מדהימה כזו בדרום אמריקה.</p>
+                    <a href="https://www.timeextension.com/features/best-of-2025-we-were-fighting-nintendo-clones-backed-by-big-companies-how-a-small-toy-company-helped-sega-conquer-brazil" class="source-link">המשך בעמוד 9 &raquo;</a>
+                    <span class="reporter">— דור קומו</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="mixed-feed">
+            <h2 style="column-span: all; margin-bottom: 10px;"><span>מרחבי הרשת</span></h2>
+            <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: צופן סודי ב-״יום פתוח״</h4>
+                <p>באמת כל הכבוד לקהילת ה״בלשים״ של המשחק. זה מרגש לראות קבוצת אנשים שמשקיעה שלוש וחצי שנים - זמן שבו אפשר לסיים תואר ראשון, לבנות בניין בתל אביב או אפילו להצליח לקבל מענה אנושי בהוט - רק כדי לפענח קובץ במשחק אינדי ישראלי. אני כבר במתח לקראת חשיפת המסר הסודי. ההימור שלי? מתכון לבורקס שיכולתם להוריד מ״וואלה״ הרבה יותר מוקדם.</p>
+            </div>
+
+            <article>
+                <h3>Pulplife - הרפתקה תת ימית ל-ZX Spectrum 128k</h3>
+                <p>Jhonnystorm משחרר את 'Pulplife', הרפתקה תת ימית חדשה ל-ZX Spectrum שבה אתם משחקים כתמנון קטן המציל אחים מטורפים.</p>
+                <a href="https://www.indieretronews.com/2025/12/pulplife-underwater-adventure-for-zx.html" class="source-link">המשך בעמוד 10 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>באג 2000 שלא היה (או שכן?)</h3>
+                <p>Nostalgia Nerd חפר "דיסק אבחון באג 2000" שנמצא בקופסת Doom II—כי איפה עוד תחביאו את האפוקליפסה? הוא מריץ אותו על מכונת Windows 98 בדיוק בחצות. המתח מורגש, התוצאה היא... ובכן, אתם תראו.</p>
+                <a href="https://www.youtube.com/shorts/rKmc3wsqBfQ" class="source-link">המשך בעמוד 11 &raquo;</a>
+                <span class="reporter">— טום בריידר</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: באג 2000 שלא היה</h4>
+                <p>דיסק אבחון באג 2000 שנמצא בקופסת <em>Doom II</em>? זה לא כלי אבחון, זה מעגל זימון לשד הסייבר של המילניום החדש! הדבר היחיד שקרס בחצות היה כנראה רמת הסוכר בדם של המשתמש.</p>
+            </div>
+
+            <article>
+                <h3>Star Quest 1 שוחרר מחדש ועבר מודרניזציה</h3>
+                <p>קלאסיקת DOS בת 30 שנה, <em>Star Quest 1 in the 27th Century</em>, קיבלה חיים חדשים. המפתח, u/paulvirtuel, שדרג את המשחק לעבוד בצורה חלקה על מערכות חלונות מודרניות, והוסיף תמיכה בבקרים, ג'ויסטיקים ומערכות HOTAS. זה זמין כהוצאת "שלם כמה שתרצה".</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pzrgrw/star_quest_1_in_the_27th_century_a_rerelease_free/" class="source-link">המשך בעמוד 12 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: Star Quest 1 שוחרר מחדש</h4>
+                <p>אה, מודל "שלם כמה שתרצה". ידוע גם כ-"מנוע רגשות האשם". אני יכול להרגיש את u/paulvirtuel בוהה בארנק שלי דרך המסך, שופט אותי על כך שאני שוקל לשלם 0.00$ על 30 שנות נוסטלגיה.</p>
+            </div>
+
+            <article>
+                <h3>Chikubi Ninja - פלטפורמר אקשן הגון למדי ל-MSX 2</h3>
+                <p>Imanok נכנס עם 'Chikubi Ninja' ל-MSX 2, פלטפורמר אקשן הכולל רפלקסים חדים ופסקול PSG מגניב.</p>
+                <a href="https://www.indieretronews.com/2025/12/chikubi-ninja-rather-decent-action.html" class="source-link">המשך בעמוד 13 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>המונוליט הבז' של קומפאק</h3>
+                <p>לפני שה-iMac הפך את מחשבי הכל-באחד ל"מגניבים", קומפאק הייתה שם בחוץ ועשתה אותם... ייחודיים. Action Retro לוקח מברג ל-Compaq Presario 4402 מ-1996. זה CRT עם תיק גב של PC, וזה מייצג את השיא המוחלט של אסתטיקת שנות ה-90. צפיית חובה למעריצי תצורות קנייניות.</p>
+                <a href="https://www.youtube.com/watch?v=kX9Vs34pfys" class="source-link">המשך בעמוד 14 &raquo;</a>
+                <span class="reporter">— טום בריידר</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: המונוליט הבז' של קומפאק</h4>
+                <p>ה-Compaq Presario 4402: הוכחה שפעם חשבנו שמחשבים צריכים להיראות כאילו גולפו מגלידת וניל שהושארה בשמש במשך שבוע.</p>
+            </div>
+
+            <article>
+                <h3>TT-64 ו-Super VIC TT - מרוצים בסגנון Super Hang-On</h3>
+                <p>'TT-64', משחק מרוצים בסגנון Super Hang-On לקומודור 64 מאת AJ Layden, מקבל עדכון ושבחים רבים על המשחקיות שלו.</p>
+                <a href="https://www.indieretronews.com/2025/12/tt-64-super-hang-on-like-arcade-racer.html" class="source-link">המשך בעמוד 15 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>ניהול זיכרון ב-DOS למתחילים</h3>
+                <p>לאלו החדשים באומנויות האופל של <code>CONFIG.SYS</code> ו-<code>AUTOEXEC.BAT</code>, המשתמש u/CyberTacoX פרסם מדריך מקיף על ניהול זיכרון ב-DOS. מההבחנה בין Conventional, EMS ו-XMS ועד ל-"אומנות" של טעינת TSRs לזיכרון הגבוה, מדריך זה הוא בסיס חיוני לכל מי שמריץ משחקים על חומרה מקורית או 86Box.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pxjn7g/dos_memory_management_for_beginners/" class="source-link">המשך בעמוד 16 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: ניהול זיכרון ב-DOS למתחילים</h4>
+                <p>סוף סוף, מדריך לאומנויות האופל! תמיד חשדתי ש-<code>HIMEM.SYS</code> הוא רק כישוף לזימון שד שאוכל את ה-RAM הפנוי שלך. עכשיו אני יכול לאשר זאת.</p>
+            </div>
+
+            <article>
+                <h3>מערכת הפעלה סימביאן: מלך הזומבים</h3>
+                <p>חשבתם שנוקיה גמרה? Janus Cycle מוכיח שסימביאן היא מערכת ההפעלה שמסרבת למות. הוא צולל לתוך Nokia N8 "שהתעורר מחדש" ומריץ קושחה מותאמת אישית ב-2026. זהו מבט מלא תשוקה על מה שהיה מחשוב נייד לפני שהמלבנים השתלטו.</p>
+                <a href="https://www.youtube.com/watch?v=xyVjWu4T0eU" class="source-link">המשך בעמוד 17 &raquo;</a>
+                <span class="reporter">— טום בריידר</span>
+            </article>
+            
+             <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: מערכת הפעלה סימביאן: מלך הזומבים</h4>
+                <p>סימביאן ב-2026? זה כמו למצוא דג קואלקנת באמבטיה שלך. "תראו, זה מכוער, זה עתיק, וזה מסרב להכיר באבולוציה! אני אוהב את זה!"</p>
+            </div>
+
+            <article>
+                <h3>Wheelchair Gladiators Championship Edition - עדכון אמיגה</h3>
+                <p>המשך AGA משופר לקלאסיקת האמיגה מ-1994 'Wheelchair Gladiators' מגיע עם יותר כלי נשק, מהלכים ומשחקיות מהירה יותר.</p>
+                <a href="https://www.indieretronews.com/2025/12/wheelchair-gladiators-championship.html" class="source-link">המשך בעמוד 18 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+            
+            <article>
+                <h3>ציד היהלומים הנסתרים של DOS</h3>
+                <p>הקהילה חופרת עמוק עבור "היהלומים הנסתרים" הטובים ביותר של DOS. הצעות עפות עבור כותרים שנעלמו מהעין וראויים למשחק חוזר. זהו מכרה זהב לכל מי שמחפש להרחיב את ה-Backlog שלו מעבר לחשודים המידיים כמו <em>Doom</em> או <em>Monkey Island</em>.</p>
+                <a href="https://www.reddit.com/r/dosgaming/comments/1pz4i7q/dos_games_hidden_gems/" class="source-link">המשך בעמוד 19 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>אליפות טטריס - מוד ל-ZX Spectrum</h3>
+                <p>שיפוץ פאזל חדש לגמרי של טטריס 2 ל-ZX Spectrum שוחרר, הכולל מערכת ניקוד חדשה ושיפורים מודרניים.</p>
+                <a href="https://www.indieretronews.com/2020/03/tetris-championship-edition-brilliant.html" class="source-link">המשך בעמוד 20 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+             <article>
+                <h3>זלדה: Breath of the Wild ב-VR</h3>
+                <p>בהישג מדהים של הנדסת אמולציה, <em>Breath of the Wild</em> הוסב ל-VR באמצעות אמולטור ה-Wii U CEMU. בניגוד למודים טיפוסיים, זה רץ כולו בתוך האמולטור עם תמיכה מלאה בקסדה, ופותח אפשרויות חדשות לחוויות VR באמולציה ללא פורטים טבעיים.</p>
+                <a href="https://www.reddit.com/r/emulation/comments/1pxmynl/zelda_botw_has_been_ported_to_vr_using_the/" class="source-link">המשך בעמוד 21 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>הקומודור 64 אולטימייט: "הכצעקתה?"</h3>
+                <p>אנחנו אוהבים את הקומודור 64, אבל לפעמים צריך לשאול שאלות. Action Retro שם את ידיו על ה-"Commodore 64 Ultimate" החדש. זו חומרה מודרנית בעור קלאסי, אבל האם זה לוכד את הנשמה של קופסת הלחם או שזו סתם עוד קופסת אמולטור?</p>
+                <a href="https://www.youtube.com/watch?v=kpLEr_HB7Fc" class="source-link">המשך בעמוד 22 &raquo;</a>
+                <span class="reporter">— טום בריידר</span>
+            </article>
+
+            <article>
+                <h3>כלי תרגום אופליין למשחקים יפניים</h3>
+                <p>u/tsug303 שחרר גרסה חדשה ולא מקוונת לחלוטין של כלי התרגום בזמן אמת שלהם. הוא משתמש במודלי OCR ותרגום מקומיים כדי להלביש טקסט מתורגם ישירות על משחקים, מה שהופך משחקי JRPG לא מתורגמים לנגישים ללא דוברי יפנית ללא צורך בחיבור לאינטרנט או ממשקי API בתשלום.</p>
+                <a href="https://www.reddit.com/r/emulation/comments/1q03u6w/cant_read_japanese_and_want_to_play_untranslated/" class="source-link">המשך בעמוד 23 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>US Championship V'ball - רימייק לאמיגה</h3>
+                <p>JOTD ו-no9 משחררים את גרסת ה-AGA ו-ECS הסופית לאמיגה של משחק הספורט הארקיידי מ-1988 'U.S. Championship V'Ball'.</p>
+                <a href="https://www.indieretronews.com/2025/09/us-championship-vball-amiga-conversion.html" class="source-link">המשך בעמוד 24 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>ארקייד רובוקופ נפרץ סוף סוף</h3>
+                <p>גרסת הארקייד של <em>RoboCop</em> של DataEast נפרצה על ידי H0ffman. פריצת דרך זו, המפורטת בבלוג שלהם, מאפשרת לשמר ולשחק במשחק, ומסמנת ניצחון נוסף למשמרי הארקייד. "Breaking the Law" אכן!</p>
+                <a href="https://www.reddit.com/r/emulation/comments/1pwdnby/robocop_breaking_the_law_h0ffman_cracks_robocop/" class="source-link">המשך בעמוד 25 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: ארקייד רובוקופ נפרץ</h4>
+                <p>"חי או מת, אתה בא איתי... לאמולטור!" H0ffman בדיוק הגיש את הצו האולטימטיבי ללוח הארקייד הזה. הייתי קונה את זה בדולר! (או, אתם יודעים, מוריד את הטלאי בחינם).</p>
+            </div>
+
+            <article>
+                <h3>Phoenix - עדכון פורט ארקייד לאמיגה</h3>
+                <p>JOTD מעדכן את המרת האמיגה של יורק המסך הקבוע הקלאסי משנות ה-80 של Taito, 'Phoenix'.</p>
+                <a href="https://www.indieretronews.com/2024/04/phoenix-1980s-arcade-game-by-taito-for_28.html" class="source-link">המשך בעמוד 26 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>פרויקט AOL 3.0 עולה לאוויר</h3>
+                <p>בפיצוץ מעבר ה-Dial-up, המשתמש u/Pcdoodle מדווח שפרויקט חדש המחיים את AOL 3.0 עלה לאוויר. הפרטים מועטים בכותרת, אך זה רומז על עניין גובר בהחייאה לא רק של משחקים, אלא גם של החוויות והממשקים המקוונים של שנות ה-90.</p>
+                <a href="https://www.reddit.com/r/vintagecomputing/comments/1pxtge1/new_aol_30_project_is_live_this_morning/" class="source-link">המשך בעמוד 27 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+            
+            <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: פרויקט AOL 3.0</h4>
+                <p>להחיות את AOL 3.0? למה? האם אנחנו מתגעגעים לצרחת המודם? להתרגשות של קבלת "You've Got Mail" רק כדי לגלות שזה דואר זבל מנסיך ניגרי? למעשה... כן. כן, אנחנו כן.</p>
+            </div>
+
+            <article>
+                <h3>Final Fight Enhanced - מכות באמיגה</h3>
+                <p>Prototron והצוות מכריזים על בילד משופר בקרוב של גרסת האמיגה AGA/ECS המשופרת של משחק המכות מ-1991 'Final Fight'.</p>
+                <a href="https://www.indieretronews.com/2025/12/final-fight-enhanced-enhanced-amiga.html" class="source-link">המשך בעמוד 28 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+             <article>
+                <h3>הספד: סטיוארט צ'ייפט</h3>
+                <p>חדשות עצובות לעולם המחשוב הישן: סטיוארט צ'ייפט, המנחה האהוב של <em>Computer Chronicles</em>, הלך לעולמו. עבודתו ארכבה את ההיסטוריה של מהפכת המחשב האישי בזמן התרחשותה, והותירה מאחור מורשת שלא תסולא בפז עבור חובבים והיסטוריונים כאחד.</p>
+                <a href="https://www.reddit.com/r/vintagecomputing/comments/1q0j7tu/stewart_cheifet_from_the_computer_chronicls/" class="source-link">המשך בעמוד 29 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>מסוף הווידאו הביתי של טוסון</h3>
+                <p>u/nixiebunny שיתף פיסת היסטוריית חומרה מרתקת: מסוף וידאו שיוצר ממש בטוסון. זו תזכורת שההיסטוריה של המחשוב אינה רק עמק הסיליקון; היא פזורה במרכזי טכנולוגיה מקומיים ובתי מלאכה נשכחים בכל מקום.</p>
+                <a href="https://www.reddit.com/r/vintagecomputing/comments/1pwavbb/video_terminal_made_in_tucson/" class="source-link">המשך בעמוד 30 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+             <article>
+                <h3>World of Spells - יריות גוף ראשון ל-ZX Spectrum</h3>
+                <p>משחק הפעולה המהיר בגוף ראשון של Jtpl, 'World of Spells' ל-ZX Spectrum 48K, מרשים עם תנועה דמוית Wolfenstein 3D.</p>
+                <a href="https://www.indieretronews.com/2025/11/world-of-spells-this-first-person.html" class="source-link">המשך בעמוד 31 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>N64: פיצוץ של קומפילציה מחדש ופורטים</h3>
+                <p>סצנת ה-N64 עולה באש! u/chicagogamecollector ריכז רשימה ענקית של כל רקומפילציה סטטית (recomp) ופורט מחשב של N64 הזמינים כיום. טכנולוגיה זו הופכת במהירות משחקי N64 לשחיקים באופן טבעי במחשב עם קצבי פריימים גבוהים ותכונות מודרניות.</p>
+                <a href="https://www.reddit.com/r/romhacking/comments/1pymcr1/every_n64_recomp_and_pc_port_you_can_play_today/" class="source-link">המשך בעמוד 32 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>Ninja Gaiden Shadow DX ל-GBC</h3>
+                <p>המרה מלאה ל-Game Boy Color עבור <em>Ninja Gaiden Shadow</em> יצאה כעת. פריצת "DX" זו מוסיפה צבע לקלאסיקה המונוכרומטית, ומפיחה חיים חדשים בהרפתקת הנינג'ה הניידת.</p>
+                <a href="https://www.reddit.com/r/romhacking/comments/1pw4epa/ninja_gaiden_shadow_dx_is_out_a_full_game_boy/" class="source-link">המשך בעמוד 33 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>Space Quest IV - אמיגה OCS משופר</h3>
+                <p>Darasco עובד על גרסה משופרת של 'Space Quest IV' עבור האמיגה OCS, ומבטיח לשפר את המוניטין של הפורט המקורי.</p>
+                <a href="https://www.indieretronews.com/2025/12/space-quest-iv-is-getting-amiga-ocs.html" class="source-link">המשך בעמוד 34 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+             <article>
+                <h3>Mario Tennis ל-N64 נפתח</h3>
+                <p>u/DrBizzHalo שיתף פריצת "Retail Game" עבור <em>Mario Tennis</em> ב-N64. זה כנראה פותח תוכן שהיה נעול בעבר מאחורי קישוריות ה-Transfer Pak או מחסומים אחרים, מה שהופך את החוויה המלאה לנגישה למשתמשי אמולטור.</p>
+                <a href="https://www.reddit.com/r/romhacking/comments/1px82ms/mario_tennis_n64_unlocked_retail_game_rom_hack/" class="source-link">המשך בעמוד 35 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+             <article>
+                <h3>משחק החודש של SBC: Link to the Past</h3>
+                <p>קהילת מחשבי הלוח היחיד הניידים חוזרת להיירול. <em>The Legend of Zelda: A Link to the Past</em> נבחר כ-"משחק החודש" לדצמבר 2025. צפו להרבה דיונים וצילומי מסך של יצירת המופת הזו של SNES על מסכים זעירים.</p>
+                <a href="https://www.reddit.com/r/SBCGaming/comments/1pavo62/december_2025_game_of_the_month_the_legend_of/" class="source-link">המשך בעמוד 36 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>התחילו כאן: המדריך האולטימטיבי למחשבי יד</h3>
+                <p>מוצפים מהמבול של מכשירי רטרו ניידים? הקהילה נָעֲצָה שרשור-על: "איזה מכשיר מתאים לי?". זוהי נקודת ההתחלה הדפיניטיבית לכל מי שמחפש לקנות את מכשיר ה-Anbernic, Miyoo או Retroid הראשון שלו.</p>
+                <a href="https://www.reddit.com/r/SBCGaming/comments/1bl9oky/which_device_is_right_for_me_if_youre_new_to_the/" class="source-link">המשך בעמוד 37 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>שלל חגים וקלאסיקות כיס</h3>
+                <p>רוח החג חזקה ב-<code>r/SBCGaming</code>, עם משתמשים כמו u/BlamJamCam המציגים מתנות כמו ה-"Pocket Classic". בעוד אנחנו מתווכחים על מפרטים וקושחה, נחמד לראות שמחה פשוטה בקבלת גאדג'ט גיימינג רטרו מהמשפחה.</p>
+                <a href="https://www.reddit.com/r/SBCGaming/comments/1pw74ej/girlfriends_parents_got_me_a_pocket_classic_as_a/" class="source-link">המשך בעמוד 38 &raquo;</a>
+                <span class="reporter">— גלי אטארי</span>
+            </article>
+
+            <article>
+                <h3>Sabre Wulf - רימסטר ל-C64</h3>
+                <p>פרויקט ג'נסיס עדיין עובד על רימסטר מלא ל-C64 של הקלאסיקה מ-1984 של Ultimate Play the Game, 'Sabre Wulf'.</p>
+                <a href="https://www.indieretronews.com/2025/06/sabre-wulf-is-still-getting-c64.html" class="source-link">המשך בעמוד 39 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+             <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: שעוני Xbox 360 "פגי תוקף"</h4>
+                <p>ה-Xbox 360 סוף סוף מודה בתבוסה נגד מצעד הזמן הבלתי פוסק! זה לא באג, זה פיצ'ר: "עדכון המשבר הקיומי". מיקרוסופט פשוט מזכירה לנו בעדינות ששום דבר לא נמשך לנצח, במיוחד התוצאות הגבוהות שלנו.</p>
+            </div>
+            
+             <article>
+                <h3>Bubble Bobble מקבל מתיחת פנים ב-C64</h3>
+                <p>Dave's Retro Forge שחרר רימסטר עליון גרפית של 'Bubble Bobble' לקומודור 64. אם חשבתם שהפורט המקורי היה טוב, העדכון הזה שואף להביא את חווית הארקייד אפילו קרוב יותר לקופסת הלחם הבז' שלכם.</p>
+                <a href="https://www.oldschoolgamermagazine.com/classic-bubble-bobble-gets-a-rather-nice-c64-remaster-by-daves-retro-forge/" class="source-link">המשך בעמוד 40 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+            
+             <article>
+                <h3>הנוקמים הרעילים חוזרים</h3>
+                <p>Tromaville זקוקה שוב להצלה! הנוקמים הרעילים חוזרים במשחק מכות חדש הכולל קו-אופ מקומי לעד ארבעה חברים. תפסו את המגב שלכם והתמודדו עם ד"ר קילמוף בסגנון פיקסל ארט מפואר.</p>
+                <a href="https://www.oldschoolgamermagazine.com/toxic-crusaders/" class="source-link">המשך בעמוד 41 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>מכשירים ניידים עם מסכים מתקפלים מגיעים</h3>
+                <p>גיימינג נייד מתפתח עם מסכים מתקפלים, כפי שניתן לראות עם קונספט מכשיר ה-Sugar Wallet.</p>
+                <a href="https://retrododo.com/handhelds-with-foldable-screens-are-coming-i-am-all-for-it/" class="source-link">המשך בעמוד 42 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+             <article>
+                <h3>תמונות וסרטון של Retroid Pocket 6</h3>
+                <p>Retroid שחררה תמונות וסרטוני וידאו ממשיים של מכשיר ה-Pocket 6 הקרוב שלהם, ומייצרת התרגשות בקהילה.</p>
+                <a href="https://retrododo.com/retroid-shows-off-real-images-video-of-pocket-6-handheld/" class="source-link">המשך בעמוד 43 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+             <article>
+                <h3>AYANEO Pocket Vert באינדיגוגו</h3>
+                <p>ה-AYANEO Pocket Vert, מכשיר כף יד אנכי, הושק באינדיגוגו עם מחיר התחלתי של 269$.</p>
+                <a href="https://retrododo.com/ayaneos-pocket-vert-is-now-on-indiegogo-starting-at-269/" class="source-link">המשך בעמוד 44 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>KT Pocket R2 נחשף</h3>
+                <p>KT Pocket חשפה רשמית את מכשיר ה-R2 יחד עם פרטי התמחור שלו.</p>
+                <a href="https://retrododo.com/kt-pocket-r2-handheld-pricing-revealed/" class="source-link">המשך בעמוד 45 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>Epilogue חושפת את ה-SNES Operator</h3>
+                <p>Epilogue הכריזה על ה-SNES Operator, מכשיר שתוכנן לאפשר למשתמשים לנהל את קבצי השמירה והרומים של קלטות ה-SNES שלהם בבטחה במחשבים מודרניים.</p>
+                <a href="https://retrododo.com/epilogue-reveals-snes-operator-to-manage-your-cartridge-files-safely/" class="source-link">המשך בעמוד 46 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+            
+            <article>
+                <h3>יוזו קושירו על יצירת Earthion</h3>
+                <p>המלחין והמפתח האגדי יוזו קושירו דן בפיתוח של Earthion, משחק יריות חדש למגה דרייב שדוחף את הקונסולה לקצה גבול היכולת.</p>
+                <a href="https://www.timeextension.com/features/best-of-2025-the-making-of-earthion-working-on-it-again-reminded-me-just-how-incredible-the-mega-drive-really-is" class="source-link">המשך בעמוד 48 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <article>
+                <h3>Analogue 3D הוכתרה כחומרת הרטרו הטובה ביותר של 2025</h3>
+                <p>ה-Analogue 3D זוכה לשבחים רבים, ומוכתרת כחומרת הרטרו הטובה ביותר של 2025 בזכות הגישה המודרנית שלה לנינטנדו 64.</p>
+                <a href="https://www.timeextension.com/features/the-analogue-3d-is-the-best-retro-hardware-of-2025" class="source-link">המשך בעמוד 49 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+            
+            <article>
+                <h3>הטכנולוגיה מאחורי הצליל של היטושי סקימוטו</h3>
+                <p>המלחין היטושי סקימוטו חושף את הסודות מאחורי מנהל ההתקן המפורסם שלו 'Terpsichorean' וההיגיון ה-"מחשבי" של מוזיקת משחקים מוקדמת.</p>
+                <a href="https://www.timeextension.com/features/best-of-2025-it-felt-very-computer-y-to-give-english-names-to-things-hitoshi-sakimoto-on-creating-his-famous-terpsichorean-sound-driver" class="source-link">המשך בעמוד 51 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+            
+            <article>
+                <h3>Barcode Battler: כל כך גרוע שזה מגניב?</h3>
+                <p>רטרוספקטיבה על ה-Barcode Battler, המכשיר הנייד של תחילת שנות ה-90 שהפך מוצרים ביתיים לנתוני RPG, וחוקרת את סטטוס הקאלט שלו כיום.</p>
+                <a href="https://www.timeextension.com/features/best-of-2025-barcode-battler-the-early-90s-classic-thats-so-crap-its-almost-cool" class="source-link">המשך בעמוד 52 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+            
+            <article>
+                <h3>Ape Escape ומורשת ה-DualShock</h3>
+                <p>מבט לאחור על יצירת Ape Escape, המשחק שהוכיח את נחיצותו של בקר ה-DualShock ושינה את משחקי הפלטפורמה בתלת-ממד לנצח.</p>
+                <a href="https://www.timeextension.com/features/best-of-2025-the-making-of-ape-escape-sonys-groundbreaking-platformer-that-unlocked-the-dualshocks-potential" class="source-link">המשך בעמוד 53 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+            
+            <article>
+                <h3>ג'ף מינטר על מצב הגיימינג</h3>
+                <p>יוצר משחקי היריות הפסיכדליים ג'ף מינטר משמיע את קולו על התעשייה המודרנית, משחקי הונאה, ועבודתו על 'I, Robot'.</p>
+                <a href="https://www.nintendolife.com/features/its-a-perversion-of-the-whole-thing-jeff-minter-on-scam-games-switch-2-and-i-robot" class="source-link">המשך בעמוד 54 &raquo;</a>
+                <span class="reporter">— עמי גסידי</span>
+            </article>
+
+            <div class="flair-box">
+                <h4>שמרלינג: בתגובה ל: ציד ביוס IBM 300GL</h4>
+                <p>חיפוש אחר "ביוס המפעל המקורי" ל-IBM 300GL הוא המקבילה הטכנולוגית של אינדיאנה ג'ונס המחפש את התיבה, אלא שבמקום המסת פרצופים, אתם פשוט מקבלים צפצוף POST שנשמע כמו חתול גוסס.</p>
+            </div>
+
+        </section>
+
+        <section class="tech-boards-section">
+            <h2 class="tech-boards-header"><span>לוחות טכניים</span></h2>
+            <ul class="tech-list">
+                <li>
+                    <h4>ביוס מפעל מקורי ל-IBM 300GL</h4>
+                    <p>מסע אחר ביוס המפעל המקורי עבור תחנת העבודה היציבה IBM 300GL.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109597" class="source-link">ראו עמוד 55 &raquo;</a>
+                </li>
+                 <li>
+                    <h4>שרשור הערכה ל-EAX</h4>
+                    <p>אודיופילים מתאספים כדי לחגוג את המורשת האימרסיבית של הרחבות האודיו הסביבתיות (EAX) של Creative.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=94106" class="source-link">ראו עמוד 55 &raquo;</a>
+                </li>
+                <li>
+                    <h4>האם העניין בחומרת PC רטרו יורד?</h4>
+                    <p>ויכוח לוהט בשאלה האם תור הזהב של אספנות סיליקון וינטג' דועך או מתפתח.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=102847" class="source-link">ראו עמוד 55 &raquo;</a>
+                </li>
+                <li>
+                    <h4>שרשור ה-Olivetti Prodest PC1 הגדול - אני מקווה</h4>
+                    <p>קריאת גיוס לבעלי ה-Olivetti Prodest PC1 הייחודי לשתף את הידע והתגליות שלהם.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109593" class="source-link">ראו עמוד 56 &raquo;</a>
+                </li>
+                <li>
+                    <h4>משחקים נתמכים ב-ATi RagePro</h4>
+                    <p>הרכבת הרשימה הדפיניטיבית של כותרים שעובדים יפה עם ערכת השבבים ATi RagePro.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109070" class="source-link">ראו עמוד 56 &raquo;</a>
+                </li>
+                <li>
+                    <h4>מחשבים המבוססים על מעבד 80188</h4>
+                    <p>חקר העולם הנדיר והמרתק של מכונות שנבנו סביב ה-Intel 80188.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=99317" class="source-link">ראו עמוד 57 &raquo;</a>
+                </li>
+                <li>
+                    <h4>הגדרת מתאם Tandy ב-QuickBasic</h4>
+                    <p>מקודדים צוללים עמוק לתוך QuickBasic כדי להגדיר ולשלוט כראוי במתאם הגרפי של Tandy.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=108448" class="source-link">ראו עמוד 57 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Master Mind</h4>
+                    <p>דיון סביב שחרור חדש או גילוי של משחק הלוגיקה הקלאסי Master Mind.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109598" class="source-link">ראו עמוד 58 &raquo;</a>
+                </li>
+                <li>
+                    <h4>צריך ערך קבל ל-AX59 Pro AGP.</h4>
+                    <p>בקשת תיקון חומרה המחפשת ערכי קבלים ספציפיים כדי להחיות לוח AX59 Pro AGP.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109585" class="source-link">ראו עמוד 58 &raquo;</a>
+                </li>
+                <li>
+                    <h4>האם כרטיס השדרוג הזה יכול לשדרג את ה-PS/2 מודל 50 286 שלי ל-486?</h4>
+                    <p>פרויקט שדרוג שאפתני המנסה להקפיץ PS/2 Model 50 מ-286 ישר ל-486.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109591" class="source-link">ראו עמוד 59 &raquo;</a>
+                </li>
+                <li>
+                    <h4>החלפת מאוורר ל-ASUS AGP-V3800 TNT2 Ultra</h4>
+                    <p>חיפוש אחר פתרון קירור כדי לשמור על כרטיס TNT2 Ultra קלאסי קריר ושקט.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109557" class="source-link">ראו עמוד 59 &raquo;</a>
+                </li>
+                <li>
+                    <h4>PC Chips M918 לא יכול לאתחל מכונן דיסקטים</h4>
+                    <p>פתרון תקלות בלוח אם עקשן של PC Chips שמסרב להכיר בכונן הדיסקטים שלו.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109565" class="source-link">ראו עמוד 60 &raquo;</a>
+                </li>
+                <li>
+                    <h4>עוטף Glide/CIF</h4>
+                    <p>פיתוח ודיון על עוטפים (wrappers) לגישור קריאות 3D API ישנות למערכות מודרניות.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109543" class="source-link">ראו עמוד 60 &raquo;</a>
+                </li>
+                <li>
+                    <h4>קבצי BIOS של Micro Firmware</h4>
+                    <p>משאב קהילתי לאיתור עדכוני BIOS חמקמקים מבית Micro Firmware.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=95798" class="source-link">ראו עמוד 61 &raquo;</a>
+                </li>
+                <li>
+                    <h4>מחפש שירי הדגמה של Sound Canvas</h4>
+                    <p>מצוד נוסטלגי אחר רצועות ההדגמה שהציגו לראווה את היכולות של ה-Sound Canvas של Roland.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109581" class="source-link">ראו עמוד 61 &raquo;</a>
+                </li>
+                <li>
+                    <h4>טלאי חדש - ההוביט (1983) על מעבדי 386+</h4>
+                    <p>תיקון חדש המאפשר לקלאסיקה מ-1983 "הוביט" לרוץ כראוי על מעבדי 386+ מהירים יותר.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=106750" class="source-link">ראו עמוד 62 &raquo;</a>
+                </li>
+                <li>
+                    <h4>אני בונה מחדש את מכונת ה-DOS, Windows 98 Pentium III שלי. בבקשה עזרה.</h4>
+                    <p>בונה מחפש את חוכמת הקהילה לבניית מכונת רטרו Pentium III אולטימטיבית עם אתחול כפול.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109596" class="source-link">ראו עמוד 62 &raquo;</a>
+                </li>
+                <li>
+                    <h4>רשימת בקרים VLB IDE</h4>
+                    <p>קטלוג בקרי ה-IDE מסוג VESA Local Bus השונים לטובת חובבי 486 בכל מקום.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=93759" class="source-link">ראו עמוד 63 &raquo;</a>
+                </li>
+                <li>
+                    <h4>כרטיסי קול PCMCIA</h4>
+                    <p>הדיון הדפיניטיבי על הוספת יכולות אודיו למחשבים ניידים באמצעות כרטיסי PCMCIA.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=30840" class="source-link">ראו עמוד 63 &raquo;</a>
+                </li>
+                <li>
+                    <h4>עצות על כוננים קשיחים גדולים מעבר ל-128GB</h4>
+                    <p>התגברות על מחסום ה-128GB לשימוש באחסון עצום על לוחות אם וינטג'.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109586" class="source-link">ראו עמוד 64 &raquo;</a>
+                </li>
+                <li>
+                    <h4>K2y-Pro16 ו-Dreamweb/Kings Quest5</h4>
+                    <p>פתרון בעיות תאימות אודיו עם כרטיס ה-K2y-Pro16 במשחקי הרפתקאות קלאסיים.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109367" class="source-link">ראו עמוד 64 &raquo;</a>
+                </li>
+                <li>
+                    <h4>Multitech MPF-PC 552 מתנהג לא יפה</h4>
+                    <p>אבחון המוזרויות והתקלות של מערכת Multitech MPF-PC 552 שמתנהגת לא יפה.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=79345" class="source-link">ראו עמוד 65 &raquo;</a>
+                </li>
+                <li>
+                    <h4>רשימת משחקים חינמיים כרגע</h4>
+                    <p>מעקב מעודכן של משחקים מסחריים ששוחררו כתוכנה חינמית.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=76611" class="source-link">ראו עמוד 65 &raquo;</a>
+                </li>
+                <li>
+                    <h4>תצורת מחשב DOS לתאימות מקסימלית?</h4>
+                    <p>ויכוח על המפרטים עבור הגביע הקדוש של תאימות משחקי DOS.</p>
+                    <a href="https://www.vogons.org/viewtopic.php?t=109553" class="source-link">ראו עמוד 66 &raquo;</a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><strong>צוות הכתבים של שבועון רטרו גיימר ישראל:</strong> דייב המסוכן (עורך ראשי) | עמי גסידי, דור קומו (סקופים) | גלי אטארי (קהילה) | טום בריידר (וידאו) | רם סטיק (טכני) | שמרלינג (פרשנות)</p>
+            <p>&copy; שבועון רטרו גיימר ישראל &bull; נוסד 2025 &bull; הודפס על טקסטורה ממוחזרת.</p>
+        </footer>
+    </div>
+</body>
+</html>
